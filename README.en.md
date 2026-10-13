@@ -1,7 +1,6 @@
 <div align="center">
 
 # Quaver 编趣
-
 **Play piano with your computer keyboard. Arrange with your mouse. Pure instrumental music, zero extra hardware.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
@@ -20,7 +19,6 @@ Quaver is a lightweight desktop music workstation for **small game developers, s
 Out of scope by design: vocals/lyrics, MIDI hardware, VST/AU hosting, cloud collaboration, video sync. Pure instrumental, instant fun.
 
 ## Highlights
-
 - **Play mode** — on-screen piano mapped to two keyboard rows (keycaps printed on the keys), scale-highlighting so out-of-key notes dim, switch tracks & instrument timbres right from the play page (instant preview on switch), one-key chord mode, **freeze mode** (latch notes one by one so 3+ notes ring together — beats the 2-3-key hardware rollover limit), rising "note echo" animation
 - **Arrange mode** — up to **16 tracks** with a track list (instrument / mute / solo / volume / pan), piano roll with multi-select & box select, batch quantize/transpose/velocity, velocity lane, clipboard, ghost notes, and a **16-step × 6-voice drum step sequencer**
 - **Audio engine** — per-track buses routed through Music/Drum group buses into a Master bus (EQ10 + Limiter), per-track reverb/delay sends, audio-clock-anchored transport with look-ahead scheduling
@@ -31,7 +29,6 @@ Out of scope by design: vocals/lyrics, MIDI hardware, VST/AU hosting, cloud coll
 - **Files** — `.bsong` project (zstd binary, < 10KB for 1000 notes, backward compatible), WAV export (whole mix + per-track), MIDI import/export (custom GM mapping via `user://gm_map.json`), MusicXML score export, track presets
 
 ## Getting started
-
 1. Install [Godot 4.7+](https://godotengine.org/download) (standard build, no .NET needed)
 2. Clone this repo and open `project.godot` in Godot
 3. Press F5 — a full *Chong Er Fei* (Fireflies Fly) demo arrangement loads on first run (32 bars: music-box melody + piano arpeggios, intro / verse ×2 / chorus)
@@ -41,13 +38,11 @@ Out of scope by design: vocals/lyrics, MIDI hardware, VST/AU hosting, cloud coll
 **Optional TS backend**: download [gode](https://github.com/godothub/gode/releases), drop the `gode` folder into `addons/`, enable the plugin in Project Settings, restart the editor. Without it everything still works on the GDScript fallback.
 
 ## Documentation
-
 Full design document (requirements, audio engine, language choices, per-version iteration records): [DESIGN.md](DESIGN.md) · 中文说明：[README.md](README.md)
 
 **Tests**: five headless smoke suites in `tests/` — run with `godot --headless --path . res://tests/smoke_v100.tscn`
 
 ## Roadmap
-
 - [x] v0.1 play mode / piano roll / quantized recording / synthesized instruments / WAV export
 - [x] v0.1.2–v0.1.4 UX upgrades / analysis page / undo-redo / MIDI round-trip / MusicXML / loop region
 - [x] v0.2.0 16-track system / bus effects routing / audio-clock transport / drum step sequencer / velocity layers
@@ -59,5 +54,4 @@ Full design document (requirements, audio engine, language choices, per-version 
 - [ ] v1.x realtime synth engine (GDExtension) · SF2 sample banks
 
 ## License
-
 [MIT](LICENSE) © 2026 fanquanpp
