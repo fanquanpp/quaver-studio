@@ -9,7 +9,7 @@
 ![Platform](https://img.shields.io/badge/Platform-Windows-blue)
 ![Version](https://img.shields.io/badge/Version-1.0.3-4fc3f7)
 
-[中文](README.md) · [English](README.en.md)
+[中文](README.md) · **English**
 
 </div>
 
